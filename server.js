@@ -26,7 +26,7 @@ app.get('/api/getName', (req, res) => {
 
 app.get('/api/getImage', (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
-    res.sendFile('.\Acs 3909\Soft-French-Bread.jpg');
+    res.sendFile(".\Acs 3909\Soft-French-Bread.jpg");
 })
 
 app.listen(PORT, "0.0.0.0", () => {
