@@ -19,6 +19,11 @@ app.get("/", (req, res) => {
     `);
 });
 
+app.get('/api/getName', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+    res.json({ name: 'Sams Website'});
+})
+
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server listening on port ${PORT}`);
 });
