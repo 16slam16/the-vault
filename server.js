@@ -24,6 +24,11 @@ app.get('/api/getName', (req, res) => {
     res.json({ name: 'Sams Website'});
 })
 
+app.get('/api/getImage', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+    res.sendFile('.\Acs 3909\Soft-French-Bread.jpg');
+})
+
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server listening on port ${PORT}`);
 });
